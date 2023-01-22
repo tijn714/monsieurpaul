@@ -1,4 +1,4 @@
-let werknemers = ['Dave', 'Nikkie', 'Liam', 'Laurens', 'Esmee', 'Eline', 'Floor', 'Femke', 'Bob', 'Bas', 'Brett', 'Danielle', 'Emily', 'Lydia', 'Laura', 'Evy', 'Lara', 'Mara', 'Nicolette', 'Sheila', 'Summer', 'Haolin', 'Zoe', 'Jordy', 'Yori', 'Zehra', 'Kelly', 'Kimberly', 'Mic', 'Tijn', 'Jace', 'Reinder', 'Lars', 'Amy', 'Renee', 'Sacha'];
+let werknemers = ['Dave', 'Nikkie', 'Liam', 'Laurens', 'Esmee', 'Eline', 'Floor', 'Bob', 'Bas', 'Brett', 'Danielle', 'Emily', 'Lydia', 'Laura', 'Evy', 'Lara', 'Mara', 'Nicolette', 'Sheila', 'Summer', 'Haolin', 'Zoe', 'Jordy', 'Yori', 'Zehra', 'Kelly', 'Kimberly', 'Mic', 'Tijn', 'Jace', 'Reinder', 'Lars', 'Amy', 'Renee', 'Sacha'];
 let uren = [];
 let fooi = 0;
 
@@ -184,7 +184,7 @@ document.getElementById("datum").innerHTML = datenoyear;
         }
         
         // Totaal aantal uren berekenen
-        let TotaalUur = Number(Dave.value) + Number(Nikkie.value) + Number(Liam.value) + Number(Laurens.value) + Number(Esmee.value) + Number(Eline.value) + Number(Floor.value) + Number(Femke.value) + Number(Bob.value) + Number(Bas.value) + Number(Brett.value) + Number(Danielle.value) + Number(Emily.value) + Number(Lydia.value) + Number(Laura.value) + Number(Evy.value) + Number(Lara.value) + Number(Mara.value) + Number(Nicolette.value) + Number(Sheila.value) + Number(Summer.value) + Number(Haolin.value) + Number(Zoe.value) + Number(Jordy.value) + Number(Yori.value) + Number(Zehra.value) + Number(Kelly.value) + Number(Kimberly.value) + Number(Mic.value) + Number(Tijn.value) + Number(Jace.value) + Number(Reinder.value) + Number(Lars.value) + Number(Amy.value) + Number(Renee.value) + Number(Sacha.value);
+        let TotaalUur = Number(Dave.value) + Number(Nikkie.value) + Number(Liam.value) + Number(Laurens.value) + Number(Esmee.value) + Number(Eline.value) + Number(Floor.value) + Number(Bob.value) + Number(Bas.value) + Number(Brett.value) + Number(Danielle.value) + Number(Emily.value) + Number(Lydia.value) + Number(Laura.value) + Number(Evy.value) + Number(Lara.value) + Number(Mara.value) + Number(Nicolette.value) + Number(Sheila.value) + Number(Summer.value) + Number(Haolin.value) + Number(Zoe.value) + Number(Jordy.value) + Number(Yori.value) + Number(Zehra.value) + Number(Kelly.value) + Number(Kimberly.value) + Number(Mic.value) + Number(Tijn.value) + Number(Jace.value) + Number(Reinder.value) + Number(Lars.value) + Number(Amy.value) + Number(Renee.value) + Number(Sacha.value);
         let FooiValue = Number(fooi.value);
 
         // Uur Tarief berekenen
