@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="name"></title>
+
+    <noscript><meta http-equiv="refresh" content="0; url=err/" /></noscript>
+
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="src/logo-black.svg">
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"><img src="src/logo-white.svg" draggable="false"></div>
+        <div class="menu-item"><a class="menu-link-active">Home</a></div>
+        <div class="menu-item"><a href="bereken.html" class="menu-link">Bereken</a></div>
+    </div>
+
+    <div class="container">
+        <div class="header" id="softwaretitle">undefined</div>
+        <div class="break"></div>
+        <div class="text" id="versie">undefined</div>
+        <div class="break"></div>
+        <div class="field">
+            <button class="btn-type1" onclick="btn1()">Fooi Berekenen</button>
+        </div>
+    </div>
+
+    <div class="form" id="docs">
+        <div class="sub-header">Hoe te gebruiken</div>
+        <div class="break"></div>
+        <ul class="doc-ul">
+            <li class="doc-li">1. Ga naar <a class="link" href="bereken.html">Bereken</a></li>
+            <li class="doc-li">2. Bij het veld 'Totaal € fooi' vul je in hoeveel fooi we hebben.</li>
+            <li class="doc-li">3. Vul het aantal uur pp in.</li>
+            <li class="doc-li">4. Laat de velden van personeel dat <b>niet</b> gewerkt heeft leeg. Velden die leeg zijn hebben automatisch de waarde van 0!</li>
+            <li class="doc-li">5. Klik op de groene knop 'Begin met berekenen'.</li>
+            <li class="doc-li">6. Het systeem zal het fooi berekenen met de gegeven informatie, nadat dit is afgerond zal er een popup naar boven komen met de resultaten</li>
+        </ul>
+    </div>
+
+
+    <div class="form">
+        <div class="sub-header">Feedback</div>
+        <div class="break"></div>
+        <div class="text">Je kan Feedback over het systeem geven aan Tijn en Nikkie.</div>
+    </div>
+
+    <br></br>
+
+    <div class="footer">
+        <div class="text">&copy; Copyright <span id="year"></span> | Tijn Rodrigo</div>
+        <div class="view-none"><span id="softwaretitle"></span> | <span id="versie"></span></div>
+    </div>
+
+      </div>
+    <script src="src/config.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>

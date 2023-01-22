@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="name"></title>
+
+    <noscript><meta http-equiv="refresh" content="0; url=err/" /></noscript>
+
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="src/logo-black.svg">
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"><img src="src/logo-white.png" draggable="false"></div>
+        <div class="menu-item"><a href="index.html" class="menu-link">Home</a></div>
+        <div class="menu-item"><a class="menu-link-active">Bereken</a></div>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close"><i class="fa fa-times"></i></span>
+            </div>
+            <div class="modal-body">
+                <div class="header">Fooi van <span id="datum"></span></div>
+                <div class="text-info">Totaal : <span id="TotaalFooi"></span> Fooi</div>
+                <div class="text-info"> | </div>
+                <div class="text-info">Uurtarief : <span id="UurTarief"></span></div> 
+            </div>
+            <div class="modal-footer">
+                <div class="text">Klik op de <i class="fa fa-times"></i> of ergens buiten het popup venster om deze te sluiten</div>
+                <div class="break"></div>
+                <div class="holder" id="holder"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">Berekenen</div>
+        <div class="break"></div>
+        <div class="text">Vul alle gegevens in, hulp nodig? zie <a class="link" href="index.html#docs">hier de instructies</a></div>
+        <div class="break"></div>
+    </div>
+    <div class="form">
+        <div class="field">
+            <label for="fooi">Totaal € fooi</label>
+            <input type="number" class="input" id="fooi"  name="fooi" placeholder="0.00">
+            <div class="error" id="FooiErr"></div>     
+        </div>  
+    </div>
+
+    <div class="form">
+          <div class="row">
+              <div class="field">
+                  <label>Dave</label>
+                  <input type="number"  class="input" id="Dave" name="Dave" placeholder="Uur Dave" max="24">
+                  <div class="error" id="DaveErr"></div>
+              </div>
+              <div class="field">
+                  <label>Nikkie</label>
+                  <input type="number" class="input" id="Nikkie" name="Nikkie" placeholder="Uur Nikkie" max="24">
+                  <div class="error" id="NikkieErr"></div>
+              </div>
+          </div>
+        
+          <div class="row">
+              <div class="field">
+                  <label>Liam</label>
+                  <input type="number"  class="input" id="Liam" name="Liam" placeholder="Uur Liam" max="24">
+                  <div class="error" id="LiamErr"></div>
+              </div>
+              <div class="field">
+                  <label>Laurens</label>
+                  <input type="number"  class="input" id="Laurens" name="Laurens" placeholder="Uur Laurens" max="24">
+                  <div class="error" id="LaurensErr"></div>
+              </div>
+          </div>
+      
+      
+          <div class="row">
+              <div class="field">
+                  <label>Esmee</label>
+                  <input type="number"  class="input" id="Esmee" name="Esmee" placeholder="Uur Esmee" max="24">
+                  <div class="error" id="EsmeeErr"></div>
+              </div>
+              <div class="field">
+                  <label>Eline</label>
+                  <input type="number"  class="input" id="Eline" name="Eline" placeholder="Uur Eline" max="24">
+                  <div class="error" id="ElineErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Floor</label>
+                  <input type="number"  class="input" id="Floor" name="Floor" placeholder="Uur Floor" max="24">
+                  <div class="error" id="FloorErr"></div>
+              </div>
+              <div class="field">
+                  <label>Femke</label>
+                  <input type="number"  class="input" id="Femke" name="Femke" placeholder="Uur Femke" max="24">
+                  <div class="error" id="FemkeErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Bob</label>
+                  <input type="number"  class="input" id="Bob" name="Bob" placeholder="Uur Bob" max="24">
+                  <div class="error" id="BobErr"></div>
+              </div>
+              <div class="field">
+                  <label>Bas</label>
+                  <input type="number"  class="input" id="Bas" name="Bas" placeholder="Uur Bas" max="24">
+                  <div class="error" id="BasErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Brett</label>
+                  <input type="number"  class="input" id="Brett" name="Brett" placeholder="Uur Brett" max="24">
+                  <div class="error" id="BrettErr"></div>
+              </div>
+              <div class="field">
+                  <label>Daniëlle</label>
+                  <input type="number"  class="input" id="Danielle" name="Danielle" placeholder="Uur Daniëlle" max="24">
+                  <div class="error" id="DanielleErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Emily</label>
+                  <input type="number"  class="input" id="Emily" name="Emily" placeholder="Uur Emily" max="24">
+                  <div class="error" id="EmilyErr"></div>
+              </div>
+              <div class="field">
+                  <label>Lydia</label>
+                  <input type="number"  class="input" id="Lydia" name="Lydia" placeholder="Uur Lydia" max="24">
+                  <div class="error" id="LydiaErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Laura</label>
+                  <input type="number"  class="input" id="Laura" name="Laura" placeholder="Uur Laura" max="24">
+                  <div class="error" id="LauraErr"></div>
+              </div>
+              <div class="field">
+                  <label>Evy</label>
+                  <input type="number"  class="input" id="Evy" name="Evy" placeholder="Uur Evy" max="24">
+                  <div class="error" id="EvyErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Lara</label>
+                  <input type="number"  class="input" id="Lara" name="Lara" placeholder="Uur Lara" max="24">
+                  <div class="error" id="LaraErr"></div>
+              </div>
+              <div class="field">
+                  <label>Mara</label>
+                  <input type="number"  class="input" id="Mara" name="Mara" placeholder="Uur Mara" max="24">
+                  <div class="error" id="MaraErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Nicolette</label>
+                  <input type="number"  class="input" id="Nicolette" name="Nicolette" placeholder="Uur Nicolette" max="24">
+                  <div class="error" id="NicoletteErr"></div>
+              </div>
+              <div class="field">
+                  <label>Sheila</label>
+                  <input type="number"  class="input" id="Sheila" name="Sheila" placeholder="Uur Sheila" max="24">
+                  <div class="error" id="SheilaErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Summer</label>
+                  <input type="number"  class="input" id="Summer" name="Summer" placeholder="Uur Summer" max="24">
+                  <div class="error" id="SummerErr"></div>
+              </div>
+              <div class="field">
+                  <label>Hao Lin</label>
+                  <input type="number"  class="input" id="Haolin" name="Haolin" placeholder="Uur Haolin" max="24">
+                  <div class="error" id="HaolinErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Zoë</label>
+                  <input type="number"  class="input" id="Zoe" name="Zoe" placeholder="Uur Zoë" max="24">
+                  <div class="error" id="ZoeErr"></div>
+              </div>
+              <div class="field">
+                  <label>Jordy</label>
+                  <input type="number"  class="input" id="Jordy" name="Jordy" placeholder="Uur Jordy" max="24">
+                  <div class="error" id="JordyErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Yori</label>
+                  <input type="number"  class="input" id="Yori" name="Yori" placeholder="Uur Yori" max="24">
+                  <div class="error" id="YoriErr"></div>
+              </div>
+              <div class="field">
+                  <label>Zehra</label>
+                  <input type="number"  class="input" id="Zehra" name="Zehra" placeholder="Uur Zehra" max="24">
+                  <div class="error" id="ZehraErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Kelly</label>
+                  <input type="number"  class="input" id="Kelly" name="Kelly" placeholder="Uur Kelly" max="24">
+                  <div class="error" id="KellyErr"></div>
+              </div>
+              <div class="field">
+                  <label>Kimberly</label>
+                  <input type="number"  class="input" id="Kimberly" name="Kimberly" placeholder="Uur Kimberly" max="24">
+                  <div class="error" id="KimberlyErr"></div>
+              </div>
+          </div>
+    
+      
+          <div class="row">
+              <div class="field">
+                  <label>Mic</label>
+                  <input type="number"  class="input" id="Mic" name="Mic" placeholder="Uur Mic" max="24">
+                  <div class="error" id="MicErr"></div>
+              </div>
+              <div class="field">
+                  <label>Tijn</label>
+                  <input type="number"  class="input" id="Tijn" name="Tijn" placeholder="Uur Tijn" max="24">
+                  <div class="error" id="TijnErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Jace</label>
+                  <input type="number"  class="input" id="Jace" name="Jace" placeholder="Uur Jace" max="24">
+                  <div class="error" id="JaceErr"></div>
+              </div>
+              <div class="field">
+                  <label>Reinder</label>
+                  <input type="number"  class="input" id="Reinder" name="Reinder" placeholder="Uur Reinder" max="24">
+                  <div class="error" id="ReinderErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Lars</label>
+                  <input type="number"  class="input" id="Lars" name="Lars" placeholder="Uur Lars" max="24">
+                  <div class="error" id="LarsErr"></div>
+              </div>
+              <div class="field">
+                  <label>Amy</label>
+                  <input type="number"  class="input" id="Amy" name="Amy" placeholder="Uur Amy" max="24">
+                  <div class="error" id="AmyErr"></div>
+              </div>
+          </div>
+      
+          <div class="row">
+              <div class="field">
+                  <label>Renee</label>
+                  <input type="number"  class="input" id="Renee" name="Renee" placeholder="Uur Renee" max="24">
+                  <div class="error" id="ReneeErr"></div>
+              </div>
+              <div class="field">
+                  <label>Sacha</label>
+                  <input type="number"  class="input" id="Sacha" name="Sacha" placeholder="Uur Sacha" max="24">
+                  <div class="error" id="SachaErr"></div>
+              </div>
+            </div>
+
+        <div class="break"></div>
+    <div class="break"></div>
+
+    <div class="btn-area">
+        <button class="submit-btn" id="btn-cal" onclick="start()">Begin met berekenen</button>
+        <button class="reset-btn" id="btn-reset" onclick="reset_all()">Reset alle velden</button>
+    </div>
+</div>
+
+    <div class="break"></div>
+    <div class="break"></div>
+
+    <div class="footer">
+        <div class="text">&copy; Copyright <span id="year"></span> | Tijn Rodrigo</div>
+        <div class="view-none"><span id="softwaretitle"></span> | <span id="versie"></span></div>
+    </div>
+
+      </div>
+      <script src="src/config.js"></script>
+      <script src="src/index.js"></script>
+</body>
+</html>
